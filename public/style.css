@@ -1,0 +1,28 @@
+* {
+  font-family: 'Poppins' , sans-serif;
+	box-sizing: border-box;
+}
+
+.mainbg{
+	background-color: #20c997;
+	padding: 0px;
+}
+
+.card-container{
+	min-height: 100hv;
+	padding: 50px;
+}
+
+p {
+	opacity: 0.8;
+}
+
+h2{
+	color: #198754;
+	padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+	color: #fff;
+}
