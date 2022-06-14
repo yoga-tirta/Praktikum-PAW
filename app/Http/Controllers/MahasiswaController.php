@@ -48,7 +48,7 @@ class MahasiswaController extends Controller
             'alamat' => $request ->alamat
         ]);
 
-        return redirect('data-mahasiswa')->with('toast_success', 'Data Berhasil Ditambahkan!');
+        return redirect('data-mahasiswa');
     }
 
     /**
@@ -88,7 +88,7 @@ class MahasiswaController extends Controller
         $Mhs = Mahasiswa::findorfail($id);
         $Mhs->update($request->all());
 
-        return redirect('/data-mahasiswa')->with('toast_success', 'Data Berhasil Diupdate!');
+        return redirect('/data-mahasiswa');
     }
 
     /**
@@ -101,7 +101,7 @@ class MahasiswaController extends Controller
     {
         $Mhs = Mahasiswa::findorfail($id);
         $Mhs->delete();
-        return back()->with('success', 'Data Berhasil Dihapus!');;
+        return back();
     }
 }
 ?>
