@@ -72,7 +72,7 @@ class MahasiswaController extends Controller
     {
         $Mhs = Mahasiswa::findorfail($id);
         return view('/edit-mahasiswa', compact('Mhs'), [
-            "title" => "Edit Data Mahasiswa"
+            "title" => "Detail Data Mahasiswa"
         ]);
     }
 
